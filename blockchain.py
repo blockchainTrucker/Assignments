@@ -182,16 +182,3 @@ if __name__ == "__main__":
     parser.add_argument('-p', '--port', default=5000, type=int, help='port to listen on')
     args = parser.parse_args()
     app.run(host='0.0.0.0', port=args.port)
-
-
-
-
-    # blockchain = Blockchain()
-    # blockchain.proof_of_work(blockchain.last_block)
-    # print(blockchain.hash(blockchain.last_block))
-
-
-    # print(blockchain.hash(blockchain.last_block))
-    # blockchain.new_transaction("Alice", "Bob", 50)
-    # blockchain.new_block(0)
-    # print(blockchain.hash(blockchain.last_block))
