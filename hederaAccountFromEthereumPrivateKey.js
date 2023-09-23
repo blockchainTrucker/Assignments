@@ -15,6 +15,7 @@ const hederaPrivateKey = PrivateKey.fromString(commonPrivateKey);
 const hederaPublicKey = hederaPrivateKey.publicKey;
 const aliasAccountId = hederaPublicKey.toAccountId(0, 0);
 
+// Both the Common Private Key and the Ethereum Private Key will be the same
 console.log(`Common Private Key (secp256k1): ${commonPrivateKey}`);
 console.log(`Ethereum Private Key: ${wallet.privateKey.toString()}`);
 console.log(`Ethereum Address: ${ethereumAddress}`);
